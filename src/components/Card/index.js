@@ -49,7 +49,7 @@ export default function Card( { data, index, listIndex } ) {
       const draggedTop = draggedOffset.y - targetSize.top
 
       // Verificar se o Card esta sendo arrastado sobre ele mesmo
-      if(draggedIndex == targetIndex && draggedListIndex == targetListIndex){
+      if(draggedIndex === targetIndex && draggedListIndex === targetListIndex){
         return;
       }
       // Verificar se o Card estiver antes do Card de destino não fazer nada
